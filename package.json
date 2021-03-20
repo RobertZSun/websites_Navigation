@@ -1,0 +1,17 @@
+{
+  "name": "0310",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "robert sun",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "parcel-bundler": "1.12.3"
+  }
+}

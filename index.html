@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Feel Free To Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header class="search-header">
+        <form method="get" action="https://www.baidu.com/s" target="_self">
+            <input type="text" name="wd" placeholder="Search">
+            <button type="submit">Go</button>
+        </form>
+    </header>
+
+    <main class="mainBody">
+        <ul class="list-for-websites">
+            <a href="" class="insertBeforePoint">
+                <li>
+                    <div class="addNew">
+                        <div class="icon-container">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-jiahao"></use>
+                            </svg>
+                        </div>
+                        <div class="addnewText">添加</div>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </main>
+
+    <div class="shade"></div>
+    <div class="addSiteForm" style="visibility:hidden;">
+        <!-- <div class="addSiteForm fade" style="display: none;"> -->
+        <form onsubmit="return false">
+            <div class="info-list">
+                <div class="info-up">网站名称</div>
+                <div class="info-down">
+                    <input type="text" placeholder="名称" name="name" required />
+                </div>
+            </div>
+            <div class="info-list">
+                <div class="info-up">网址</div>
+                <div class="info-down">
+                    <input type="text" placeholder="网址" name="page" required />
+                </div>
+            </div>
+            <div class="info-list">
+                <div class="info-up">图标地址</div>
+                <div class="info-down">
+                    <input type="text" placeholder="图标地址（选填）" name="logo" />
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="btn-cancel">取消</button>
+                <input type="button" value="提交" class="submitInfor btn-submit" name="submit" />
+            </div>
+
+        </form>
+    </div>
+
+    <footer class="copyright_footer">
+        <span>Copyright © 2020-2021 Robert Sun</span>
+    </footer>
+
+    <script src="//at.alicdn.com/t/font_2432711_z6vmhuqpkco.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
